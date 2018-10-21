@@ -17,7 +17,6 @@ h6 {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 ol,
@@ -29,6 +28,8 @@ ul {
 
 .menu {
   height: inherit;
+  position: absolute;
+  right: 1px
 }
 
 .logo {
@@ -39,6 +40,7 @@ ul {
 
 .header {
   height: 50px;
+  color: white;
 }
 
 .header a {
@@ -56,114 +58,14 @@ ul {
 .header ol li {
   height: inherit;
 }
-
-.header-button {
-  height: auto;
+.pull-left {
+  float: left !important;
 }
-
-
-/* BACKGROUNDS SLIDER
--------------------------------------------------- */
-.header-back {
-  height: 500px;
-  width: 100%;
+.pull-right {
+  float: right !important;
 }
-.header-back.one {
-  background: url('../img/header_one.jpg') center no-repeat;
-  background-size: cover;
-}
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-  width: 100%;
-  height: 66.67%;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 66.67%;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 66.67%;
-}
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-.carousel-control.left,
-.carousel-control.right {
-  background: none;
-}
-.carousel-control {
-  width: 6%;
-}
-.carousel-inner .container {
-  position: relative;
-}
-.carousel-inner {
-  overflow: visible;
-}
-.carousel-caption {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  bottom: auto;
-  right: auto;
-  text-align: left;
-}
-.carousel-caption {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  bottom: auto;
-  right: auto;
-  text-align: left;
-}
-.carousel-caption.blank {
-  top: 140px;
-}
-.carousel-image {
-  position: absolute;
-  right: 50px;
-  top: 150px;
-}
-.carousel-indicators {
-}
-.carousel-caption h1 {
-  font-weight: 700;
-  font-size: 38px;
-  /* text-transform: uppercase; */
-  text-shadow: none;
-  letter-spacing: -1.5px;
-}
-.carousel-caption p {
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: none;
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
