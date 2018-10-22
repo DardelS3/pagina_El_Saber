@@ -1,4 +1,3 @@
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -8,7 +7,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,6 +19,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  background-color: #F0F0F0;
 }
 
 h1,
@@ -28,7 +27,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   /* font-style: italic; */
@@ -44,9 +43,11 @@ h1 {
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
 }
+
 h1 strong {
   color: #026fff;
 }
+
 h2 {
   color: #026fff;
   text-transform: uppercase;
@@ -69,10 +70,20 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hero-image{
+.hero-image {
   object-fit: cover;
 }
 
+.carousel {
+  height: 66.67%;
+  margin-bottom: 0;
+}
+
+.carousel-inner img {
+  height: 100%;
+  max-height: 460px;
+  width: 100%;
+}
 
 .portfolio {
   background: #fafafa;
@@ -107,27 +118,29 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .project-course,
 .project-date,
 .project-url {
   margin: 10px 0;
 }
+
 .project-description {
   font-size: 20px;
 }
+
 .project strong {
   font-family: 'Fjalla One', sans-serif;
 }
+
 /* .project-date {
   margin: 10px 0;
 } */
-
 .project-title {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
 }
-
 
 .project-details {
   width: 50%;
@@ -147,10 +160,11 @@ h2 {
   background-color: #4DD261;
   color: white;
   display: flex;
-  height: 70px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 ol,
@@ -168,16 +182,20 @@ figure {
   color: white;
   text-decoration: none;
 }
+
 .menu {
   height: inherit;
 }
+
 .header ol {
   display: flex;
   height: inherit;
 }
+
 .header ol li {
   height: inherit;
 }
+
 .header a {
   display: flex;
   align-items: center;
@@ -201,7 +219,6 @@ figure {
   height: 50px;
   margin: 5px;
   border: 1px solid red;
-
   flex-shrink: 0;
 }
 
@@ -226,9 +243,11 @@ figure {
   display: flex;
   flex-wrap: wrap;
 }
+
 .event-list-title {
   margin-left: 20px;
 }
+
 .event {
   margin: 1%;
   width: 48%;
@@ -237,11 +256,13 @@ figure {
   overflow: hidden;
   background: #f4fbff;
 }
+
 .event img {
   width: 480px;
   height: 200px;
   object-fit: cover;
 }
+
 .event-detail {
   margin: 20px 40px;
   margin-top: -40px;
@@ -250,6 +271,7 @@ figure {
   padding: 20px;
   text-align: center;
 }
+
 .event-description {
   text-align: left;
 }
@@ -272,8 +294,7 @@ figure {
   flex-wrap: wrap;
 }
 
-.social {
-}
+.social {}
 
 .social-link {
   display: inline-block;
@@ -286,16 +307,18 @@ figure {
 .social-link.twitter {
   background-image: url('../images/twitter.svg');
 }
+
 .social-link.facebook {
   background-image: url('../images/facebook.svg');
 }
+
 .social-link.github {
   background-image: url('../images/github.svg');
 }
+
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
 }
-
 
 .form-email input {
   border-color: gray;
@@ -352,23 +375,26 @@ figure {
 }
 
 /* desktop first que empieces desde el MQ más grande */
-
 @media screen and (max-width: 1023px) {
   .event-list-title {
     margin-left: 0;
   }
+
   .portfolio {
     padding: 0;
   }
+
   .container {
     padding: 0 1em;
   }
+
   .hero {
     height: auto;
     position: relative;
     overflow: hidden;
     padding: 2em;
   }
+
   .hero-image {
     position: absolute;
     z-index: 1;
@@ -378,6 +404,7 @@ figure {
     bottom: 0;
     width: 100%;
   }
+
   h1 {
     font-size: 2em;
     z-index: 2;
@@ -415,21 +442,27 @@ figure {
     font-size: 1.2em;
     margin: .5em 0;
   }
+
   .burger-button {
     display: block;
   }
+
   .header {
     height: auto;
   }
+
   .container {
     padding: 0 17em;
   }
+
   .header ol {
     display: block;
   }
+
   .header ol li {
     height: 50px;
   }
+
   .header a {
     justify-content: center;
     height: 40px;
@@ -437,6 +470,7 @@ figure {
     text-decoration: underline;
     margin-bottom: .5em;
   }
+
   .header .logo {
     display: inline;
     width: 100px;
@@ -458,6 +492,7 @@ figure {
     justify-content: center;
     transition: .3s;
   }
+
   .menu.is-active {
     left: 0;
   }
@@ -465,36 +500,40 @@ figure {
   .project {
     display: block;
   }
+
   .project-imageContainer {
     width: auto;
     text-align: center;
   }
+
   .project-details {
     width: auto;
     /* font-size: 10px; */
   }
+
   .project-course, .project-date, .project-url {
     margin: .3em 0;
   }
+
   .project-title {
     font-size: 1.5em;
     margin-bottom: .3em;
   }
+
   .project-url {
     font-size: 1em;
-
   }
+
   .project-course {
     font-size: .7em;
-
   }
+
   .project-date {
     font-size: 1em;
-
   }
+
   .project-description {
     font-size: 1em;
-
   }
 
   .event {
@@ -511,6 +550,7 @@ figure {
   h1 {
     font-size: 1.5em;
   }
+
   .project-details {
     font-size: 14px;
   }
@@ -520,26 +560,32 @@ figure {
     margin: -2em .5em .5em;
     padding: 1em;
   }
+
   .contact {
     height: auto;
     padding: 1.5em 0;
     text-align: center;
     display: block;
   }
+
   .container {
     padding: 0 8em;
   }
+
   .form-email button {
     margin: 1em auto;
   }
+
   .form-email h3 {
     margin-top: 0;
   }
+
   .footer {
     display: block;
     text-align: center;
     border: 1px solid transparent;
   }
+
   .social-link {
     width: 40px;
     height: 40px;
@@ -547,15 +593,16 @@ figure {
   }
 }
 
-
 @media screen and (max-width: 320px) {
   h1 {
     font-size: 1.2em;
     /* background: rgba(0,0,0,.5) */
   }
+
   .container {
     padding: 0 3em;
   }
+
   .hero {
     padding: 2em 1em;
   }
