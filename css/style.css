@@ -142,7 +142,9 @@ h2 {
 }
 
 .header {
-  background-color: #1b2127;
+  position: fixed;
+  width: 100%;
+  background-color: #4DD261;
   color: white;
   display: flex;
   height: 70px;
@@ -408,7 +410,7 @@ figure {
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   h2 {
     font-size: 1.2em;
     margin: .5em 0;
@@ -418,6 +420,9 @@ figure {
   }
   .header {
     height: auto;
+  }
+  .container {
+    padding: 0 17em;
   }
   .header ol {
     display: block;
@@ -436,7 +441,7 @@ figure {
     display: inline;
     width: 100px;
     position: relative;
-    left: 90px;
+    left: 50px;
   }
 
   .menu {
@@ -515,12 +520,14 @@ figure {
     margin: -2em .5em .5em;
     padding: 1em;
   }
-
   .contact {
     height: auto;
     padding: 1.5em 0;
     text-align: center;
     display: block;
+  }
+  .container {
+    padding: 0 8em;
   }
   .form-email button {
     margin: 1em auto;
@@ -545,6 +552,9 @@ figure {
   h1 {
     font-size: 1.2em;
     /* background: rgba(0,0,0,.5) */
+  }
+  .container {
+    padding: 0 3em;
   }
   .hero {
     padding: 2em 1em;

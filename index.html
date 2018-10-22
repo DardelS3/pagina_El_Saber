@@ -7,17 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet"> -->
 
   <!-- TÍTULO -->
   <title>Colegio El Saber - Pagina Principal</title>
+
   <!-- LINKS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Animation CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" /> -->
-
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
   <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" /> -->
 
 
@@ -27,23 +25,27 @@
   <i class="fa fa-bars burger-button" id="burger-menu"></i>
   <header class="header" id="Header">
     <div class="container">
-      <h3 class="pull-right">Colegio El Saber</h3>
+      <h3 class="">Colegio El Saber</h3>
       <nav class="menu">
         <ol>
-          <img style="text-align: center" class="logo" src="/home/steve/Escritorio/Fa19/pagina_El_Saber/img/logo_el_saber.png" alt="logo">
-          <a class="btn btn-outline-dark" href="#inicio">Inicio</a>
-          <a class="btn btn-outline-dark" href="#quienesSomos">¿Quienes Somos?</a>
-          <a class="btn btn-outline-dark" href="#niveles">Niveles</a>
-          <a class="btn btn-outline-dark" href="#contacto">Contacto</a>
+          <div class="container borderYtoX">
+
+            <img style="text-align: center" class="logo" src="/home/steve/Escritorio/Fa19/pagina_El_Saber/img/logo_el_saber.png" alt="logo">
+            <a href="#inicio">Inicio</a>
+            <a href="#quienesSomos">¿Quienes Somos?</a>
+            <a href="#niveles">Niveles</a>
+            <a href="#contacto">Contacto</a>
+          </div>
         </ol>
       </nav>
     </div>
   </header>
+  <div style="height: 70px;"></div>
   <section id="inicio">
 
 
     <!-- <img class="logo" src="/home/steve/Escritorio/Fa19/pagina_El_Saber/img/logo_el_saber.png" alt="logo"> -->
-  <!-- <div id="carrousel" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carrousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/fondoP1.jpg" alt="el_saber_P1">
@@ -101,6 +103,7 @@
   </section>
 
   <section id="contacto">
+    <footer></footer>
 
   </section>
 
@@ -110,8 +113,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="js/index.js" type="text/javascript"></script>
   <script type="text/javascript">
-      // console.log('Hola mundo! es mi primera linea en JS');
-      const ipad = window.matchMedia('screen and (max-width: 767px)')
+    // console.log('Hola mundo! es mi primera linea en JS');
+    const ipad = window.matchMedia('screen and (max-width: 767px)')
     const menu = document.querySelector('.menu');
     // console.log(menu);
     const burgerButton = document.querySelector('#burger-menu');
