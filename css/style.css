@@ -49,7 +49,6 @@ h1 strong {
 }
 
 h2 {
-  color: #026fff;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -164,7 +163,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 4;
 }
 
 ol,
@@ -204,6 +203,15 @@ figure {
 }
 
 .logo {
+  display: block;
+  width: 18%;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  z-index: 2;
+}
+
+.logoMenu {
   display: none;
 }
 
@@ -222,9 +230,32 @@ figure {
   flex-shrink: 0;
 }
 
+div .redes {
+  align-items: center;
+}
+
+.text-center {
+  padding: 1em;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.spacer {
+  width: 10px;
+}
+
+.info {
+  background-color: #1300FF;
+  border: 3px solid black;
+  padding: 1em;
+  border-radius: 10px;
+}
+
 .footer {
   color: white;
-  background-color: #1b2127;
+  background-color: #8300FF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -368,13 +399,30 @@ figure {
   line-height: 40px;
   text-align: center;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   left: 5px;
   top: 5px;
   color: white;
 }
 
+section .container {
+  padding: 2em;
+}
+
 /* desktop first que empieces desde el MQ más grande */
+@media screen and (min-width: 1365px) {
+  .carousel {
+    height: 66.67%;
+    margin-bottom: 0;
+  }
+
+  .carousel-inner img {
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .event-list-title {
     margin-left: 0;
@@ -471,7 +519,7 @@ figure {
     margin-bottom: .5em;
   }
 
-  .header .logo {
+  .logoMenu {
     display: inline;
     width: 100px;
     position: relative;
@@ -591,6 +639,10 @@ figure {
     height: 40px;
     background-size: 100%;
   }
+
+  .logo {
+    width: 22%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -605,5 +657,9 @@ figure {
 
   .hero {
     padding: 2em 1em;
+  }
+
+  .logo {
+    width: 24%;
   }
 }
