@@ -97,6 +97,12 @@ h2 {
 	width: 60px;
 }
 
+.scroll {
+     width:628px;
+     height:315px;
+     overflow:auto;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -110,6 +116,10 @@ h2 {
 
 .titulo {
   font-size: 1.5em;
+}
+
+.pull-right {
+  float: right;
 }
 
 div .icon {

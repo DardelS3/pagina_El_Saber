@@ -62,6 +62,10 @@
   <section id="inicio">
     <main id="main">
       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+        </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/fondoP1.jpg" alt="el_saber_1">
@@ -70,76 +74,103 @@
             <img class="d-block w-100" src="img/fondoP2.jpg" alt="el_saber_2">
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
       </div>
     </main>
   </section>
 
   <section id="quienesSomos">
-    <div class="container">
-      <h2 class="text-center">¿Quienes Somos?</h2>
-      <div class="tab">
-        <button id="defaultOpen" class="tablinks" onclick="abrirPanel(event, 'Objetivo')">Objetivo</button>
-        <button class="tablinks" onclick="abrirPanel(event, 'Proposito')">Propósito</button>
-        <button class="tablinks" onclick="abrirPanel(event, 'Mision')">Misión</button>
-        <button class="tablinks" onclick="abrirPanel(event, 'Vision')">Visión</button>
-        <button class="tablinks" onclick="abrirPanel(event, 'Historia')">Historia</button>
+    <h1 style="color: black;" class="text-center">¿Quienes Somos?</h1>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg text-center pb-1">
+        <div class="container">
+          <div class="tab">
+            <button id="defaultOpen" class="tablinks" onclick="abrirPanel(event, 'Objetivo')">Objetivo</button>
+            <button class="tablinks" onclick="abrirPanel(event, 'Proposito')">Propósito</button>
+            <button class="tablinks" onclick="abrirPanel(event, 'Mision')">Misión</button>
+            <button class="tablinks" onclick="abrirPanel(event, 'Vision')">Visión</button>
+            <button class="tablinks" onclick="abrirPanel(event, 'Historia')">Historia</button>
+          </div>
+
+          <div id="Objetivo" class="tabcontent scroll">
+            <h3 class="text-center">Objetivo</h3>
+            <p class="justificar">Motivar e incentivar a jóvenes y adultos a descubrir, interesarse e investigar como estudiar. Logrando que nuestros alumnos en el futuro sean adultos responsables, seguros de si mismo, productivos, socialmente
+              aceptados, satisfechos y
+              felices,
+              con valores cívicos y morales bien arraigados, conscientes de sus capacidades y diferencias, sensibles de la necesidad de ayudar, apoyar y aceptar a todos como iguales.</p>
+          </div>
+          <div id="Proposito" class="tabcontent scroll">
+            <h3 class="text-center">Propósito</h3>
+            <p class="justificar">Como institución educativa ofrecer coeducación, y preparación individual, con elementos científicos y valores morales teniendo en cuenta su personalidad, nuevos modelos y cultura de paz dentro de un mundo
+              competitivo.</p>
+          </div>
+
+          <div id="Mision" class="tabcontent scroll">
+            <h3 class="text-center">Misión</h3>
+            <p class="justificar">Somos una institución educativa donde ofrecemos coeducación y preparación individual con elementos científicos, valores morales teniendo en cuenta su personalidad; valores educativos basados en la reforma
+              educativa, CNB propuesta Mineduc
+              fortalecemos permanentemente la actualización y continuidad de nuestro proyecto educativo, por calidad, ajustándolo a las necesidades y demandas de la comunidad educativa, organizado en un equipo de trabajo para que el proceso de
+              enseñanza
+              se
+              de
+              en un clima favorable dentro y fuera del aula y donde además brindamos apoyo a los tutores y personal docente, para que las funciones de orientación y dirección faciliten a los alumnos un mejor acompañamiento donde se integran los
+              espacios
+              de
+              comunicación y sobre todo contar con el apoyo de los padres de familia para que nos permitan como comunidad de educadores estar presentes y favorecer el desarrollo de nuestro entorno.</p>
+          </div>
+
+          <div id="Vision" class="tabcontent scroll">
+            <h3 class="text-center">Visión</h3>
+            <p class="justificar">Ser una institución fuerte con identidad propia, donde cada uno de los integrantes de esta comunidad se sienta comprometido con el aprendizaje y desarrollo personal de los alumnos y alumnas, para que alcancen
+              el éxito a nivel escolar y
+              profesional, brindando para ello una educación humanista, científica y tecnológica, trabajo en equipo, plena participación democrática, alto espíritu crítico y creativo y que de acuerdo a las relaciones humanas todo se dé bajo un clima
+              de
+              respeto honestidad, tolerancia, responsabilidad, personal, orden, autodisciplina y lealtad donde también intervengan los derechos humanos, valores cívicos, valores institucionales, ajustándolos a las necesidades y demandas de la
+              comunidad
+              educativa, convencidos de que la educación es la base del cambio.</p>
+          </div>
+
+          <div id="Historia" class="tabcontent scroll">
+            <h3 class="text-center">Historia</h3>
+            <p class="justificar">
+              “CENTRO EDUCATIVO INTEGRAL EL SABER”, inicio sus labores docentes, en el año 1980 en el inmueble ubicado en la casa de ladrillo, atrás de gasolinera Shell, San José Pinula, en donde actualmente funciona las
+              clínicas del IGSS; se apertura
+              en el de preprimaria y funcionó con el nombre de “JARDIN INFANTIL SAN JOSE”, estando activo durante cinco años, después de los cuales se solicita una ampliación de servicios para el nivel primaria.
+              <br>
+              <br>
+              En esta cobertura se considera un nombre que integrar dentro de él, el servicio eficiente, responsable y de calidad educativa. Y, se solicita el expediente de apertura del servicio educativo con el nombre de “CENTRO EDUCATIVO INTEGRAL El SABER”.
+              Su fundadora y primera directora fue la Maestra de Educación Primaria Urbana María Martha Castilla quien cede la Dirección a su hija Anabella Eunice Maldonado Castilla y quién queda como directora de los niveles de preprimaria y
+              primaria.
+              <br>
+              <br>
+              En el año de 2002 se traslada a otras instalaciones en la 2da. Calle 1-40 zona 2, donde actualmente funciona, ya con un inmueble con condiciones favorables se solicita la ampliación de servicios y jornadas especiales.
+              Nivel Básico y Diversificado con las Carreras de: Bachillerato en Ciencias y Letras con Orientación en Computación, Perito Contador, Secretariado Oficinista y Plan Fin de Semana: Primaria para adultos, Básicos Normales, Básicos por Madurez,
+              Bachillerato por bajo la Dirección de Hugo Rolando Sandoval Castilla.
+            <br>
+            <br>
+              En el año 2008 se invierte en una nueva infraestructura ubicada el Lote 3, Manzana D, Sector Los Claveles de
+              Residenciales San José. Dos años más tarde se solicitan los servicios y se abre otro establecimiento
+              denominado Centro Educativo Integral El Saber No. 2 con los niveles de Preprimaria, Primaria y Básicos, siendo
+              propietario de este el Lic. Juan Carlos Marroquín Maldonado. En el año 2015 se solicita ampliación de servicios
+              y se autoriza las carreras de: Magisterio Infantil Bilingüe Intercultural, Bachillerato en Ciencia y Letras con
+              Orientación en Electricidad y Bachillerato en Ciencias y Letras con Orientación en Diseño Gráfico.</p>
+
+          </div>
+        </div>
       </div>
-
-      <div id="Objetivo" class="tabcontent">
-        <h3 class="text-center">Objetivo</h3>
-        <p class="justificar">Motivar e incentivar a jóvenes y adultos a descubrir, interesarse e investigar como estudiar. Logrando que nuestros alumnos en el futuro sean adultos responsables, seguros de si mismo, productivos, socialmente
-          aceptados, satisfechos y
-          felices,
-          con valores cívicos y morales bien arraigados, conscientes de sus capacidades y diferencias, sensibles de la necesidad de ayudar, apoyar y aceptar a todos como iguales.</p>
-      </div>
-
-      <div id="Proposito" class="tabcontent">
-        <h3 class="text-center">Propósito</h3>
-        <p class="justificar">Como institución educativa ofrecer coeducación, y preparación individual, con elementos científicos y valores morales teniendo en cuenta su personalidad, nuevos modelos y cultura de paz dentro de un mundo
-          competitivo.</p>
-      </div>
-
-      <div id="Mision" class="tabcontent">
-        <h3 class="text-center">Misión</h3>
-        <p class="justificar">Somos una institución educativa donde ofrecemos coeducación y preparación individual con elementos científicos, valores morales teniendo en cuenta su personalidad; valores educativos basados en la reforma
-          educativa, CNB propuesta Mineduc
-          fortalecemos permanentemente la actualización y continuidad de nuestro proyecto educativo, por calidad, ajustándolo a las necesidades y demandas de la comunidad educativa, organizado en un equipo de trabajo para que el proceso de enseñanza
-          se
-          de
-          en un clima favorable dentro y fuera del aula y donde además brindamos apoyo a los tutores y personal docente, para que las funciones de orientación y dirección faciliten a los alumnos un mejor acompañamiento donde se integran los espacios
-          de
-          comunicación y sobre todo contar con el apoyo de los padres de familia para que nos permitan como comunidad de educadores estar presentes y favorecer el desarrollo de nuestro entorno.</p>
-      </div>
-
-      <div id="Vision" class="tabcontent">
-        <h3 class="text-center">Visión</h3>
-        <p class="justificar">Ser una institución fuerte con identidad propia, donde cada uno de los integrantes de esta comunidad se sienta comprometido con el aprendizaje y desarrollo personal de los alumnos y alumnas, para que alcancen
-          el éxito a nivel escolar y
-          profesional, brindando para ello una educación humanista, científica y tecnológica, trabajo en equipo, plena participación democrática, alto espíritu crítico y creativo y que de acuerdo a las relaciones humanas todo se dé bajo un clima de
-          respeto honestidad, tolerancia, responsabilidad, personal, orden, autodisciplina y lealtad donde también intervengan los derechos humanos, valores cívicos, valores institucionales, ajustándolos a las necesidades y demandas de la comunidad
-          educativa, convencidos de que la educación es la base del cambio.</p>
-      </div>
-
-      <div id="Historia" class="tabcontent">
-        <h3 class="text-center">Historia</h3>
-        <p class="justificar">“CENTRO EDUCATIVO INTEGRAL EL SABER”, inicio sus labores docentes, en el año 1980 en el inmueble ubicado en la casa de ladrillo, atrás de gasolinera Shell, San José Pinula, en donde actualmente funciona las
-          clínicas del IGSS; se apertura
-          en el de preprimaria y funcionó con el nombre de “JARDIN INFANTIL SAN JOSE”, estando activo durante cinco años, después de los cuales se solicita una ampliación de servicios para el nivel primaria. En esta cobertura se considera un nombre
-          que integrar dentro de él, el servicio eficiente, responsable y de calidad educativa. Y, se solicita el expediente de apertura del servicio educativo con el nombre de “CENTRO EDUCATIVO INTEGRAL El SABER”.
-          Su fundadora y primera directora fue la Maestra de Educación Primaria Urbana María Martha Castilla quien cede la Dirección a su hija Anabella Eunice Maldonado Castilla y quién queda como directora de los niveles de preprimaria y primaria.
-          En el año de 2002 se traslada a otras instalaciones en la 2da. Calle 1-40 zona 2, donde actualmente funciona, ya con un inmueble con condiciones favorables se solicita la ampliación de servicios y jornadas especiales. Nivel Básico y
-          Diversificado con las Carreras de: Bachillerato en Ciencias y Letras con Orientación en Computación, Perito Contador, Secretariado Oficinista y Plan Fin de Semana: Primaria para adultos, Básicos Normales, Básicos por Madurez, Bachillerato
-          por bajo la Dirección de Hugo Rolando Sandoval Castilla.</p>
-        <br>
-        <p class="justificar">En el año 2008 se invierte en una nueva infraestructura ubicada el Lote 3, Manzana D, Sector Los Claveles de
-          Residenciales San José. Dos años más tarde se solicitan los servicios y se abre otro establecimiento
-          denominado Centro Educativo Integral El Saber No. 2 con los niveles de Preprimaria, Primaria y Básicos, siendo
-          propietario de este el Lic. Juan Carlos Marroquín Maldonado. En el año 2015 se solicita ampliación de servicios
-          y se autoriza las carreras de: Magisterio Infantil Bilingüe Intercultural, Bachillerato en Ciencia y Letras con
-          Orientación en Electricidad y Bachillerato en Ciencias y Letras con Orientación en Diseño Gráfico.</p>
-
+      <div class="col-12 col-sm-6 col-md-4 col-lg text-center pb-1">
+        <div class="container">
+          <img style="width: 450px;align-items: center;" src="img/logo_el_saber.png" alt="logo">
+        </div>
       </div>
     </div>
+
 
   </section>
 
