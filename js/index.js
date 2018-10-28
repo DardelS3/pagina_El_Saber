@@ -1,7 +1,9 @@
 $('.carousel').carousel({
   interval: 5000
 })
-
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+})
 function abrirPanel(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

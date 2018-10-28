@@ -49,7 +49,6 @@ h1 strong {
 }
 
 h2 {
-  text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -73,84 +72,34 @@ h2 {
   object-fit: cover;
 }
 
-.carousel {
-  height: 66.67%;
-  margin-bottom: 0;
+#carousel{
+	position: relative;
 }
 
-.carousel-inner img {
-  height: 100%;
-  max-height: 460px;
-  width: 100%;
+.#carousel .overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
 }
 
-.portfolio {
-  background: #fafafa;
-  padding: 20px;
-  /* background: red; */
+#main .carousel-inner img{
+	object-fit: cover;
+	max-height: 70vh;
+	filter: grayscale(70%);
 }
 
-.project {
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid orange;
-  border-bottom: 10px solid pink; */
-  /* color: blue; */
-  /* border-top-color: red;
-  border-top-width: 15px;
-  border-top-style: solid; */
-  border: 1px solid gray;
-  border-radius: 10px;
-  /* border-top-left-radius: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-  /* margin: 10px; */
-  margin-bottom: 15px;
-  /* margin-right
-  margin-left
-  margin-top */
-  padding: 20px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+#header img{
+	width: 60px;
 }
 
-.project-course,
-.project-date,
-.project-url {
-  margin: 10px 0;
-}
 
-.project-description {
-  font-size: 20px;
-}
-
-.project strong {
-  font-family: 'Fjalla One', sans-serif;
-}
-
-/* .project-date {
-  margin: 10px 0;
-} */
-.project-title {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.project-details {
-  width: 50%;
-}
-
-.project-imageContainer {
-  width: 50%;
-}
-
-.project-imageContainer img {
-  max-width: 100%;
+div .icon {
+  width: 50px;
 }
 
 .header {
@@ -164,6 +113,14 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 4;
+}
+
+.justificar {
+  text-align: justify;
+}
+
+.redondear {
+  border-radius: 30%;
 }
 
 ol,
@@ -202,14 +159,6 @@ figure {
   padding: 0 10px;
 }
 
-.logo {
-  display: block;
-  width: 18%;
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  z-index: 2;
-}
 
 .logoMenu {
   display: none;
@@ -253,13 +202,9 @@ div .redes {
   border-radius: 10px;
 }
 
-.footer {
+#footer {
+  background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
   color: white;
-  background-color: #8300FF;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .footer img {
@@ -410,18 +355,7 @@ section .container {
 }
 
 /* desktop first que empieces desde el MQ más grande */
-@media screen and (min-width: 1365px) {
-  .carousel {
-    height: 66.67%;
-    margin-bottom: 0;
-  }
 
-  .carousel-inner img {
-    height: 100%;
-    max-height: 600px;
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 1023px) {
   .event-list-title {
@@ -485,14 +419,10 @@ section .container {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   h2 {
     font-size: 1.2em;
     margin: .5em 0;
-  }
-
-  .burger-button {
-    display: block;
   }
 
   .header {
@@ -639,10 +569,6 @@ section .container {
     height: 40px;
     background-size: 100%;
   }
-
-  .logo {
-    width: 22%;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -659,7 +585,4 @@ section .container {
     padding: 2em 1em;
   }
 
-  .logo {
-    width: 24%;
-  }
 }
