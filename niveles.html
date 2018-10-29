@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
+  <link href="css/tabNiveles.css" rel="stylesheet">
+
+  <title>Niveles | Centro Educativo Integral El Saber</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="59">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="header">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo_el_saber.png" alt="logo">
+      <span class="titulo" style="vertical-align: middle;">Centro Educativo Integral El Saber</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="container borderYtoX">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">¿Quienes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="niveles.html">Niveles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Contacto</a>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalCompra">Comprar tickets</a>
+              </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="text-center"><strong>Niveles Escolares</strong></h1>
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg text-center pb-1">
+    <div class="tab">
+      <button id="defaultOpen" class="tablinks" onclick="abrirPanel(event, 'el_saber_1')">
+        <h1 style="color: black;">El Saber 1</h1>
+      </button>
+      <button class="tablinks" onclick="abrirPanel(event, 'el_saber_2')">
+        <h1 style="color: black;">El Saber 2</h1>
+      </button>
+    </div>
+    <div id="el_saber_1" class="tabcontent">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pre-primaria" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Pre-Primaria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="primaria" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Primaria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="basicos" data-toggle="pill" href="#pills-basicos" role="tab" aria-controls="pills-basicos" aria-selected="false">Básicos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="diversificado" data-toggle="pill" href="#pills-diversificado" role="tab" aria-controls="pills-diversificado" aria-selected="false">Diversificado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="finSemana" data-toggle="pill" href="#pills-finSemana" role="tab" aria-controls="pills-finSemana" aria-selected="false">Fin de Semana</a>
+        </li>
+      </ul>
+
+      <div class="tab-content scroll" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pre-primaria">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Pre-Primaria <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Kinder: 3 y 4 años
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Párvulos: 5 años <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Preparatoria: 6 años <br>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                  Horario: 7:00 am a 12:30 p.m <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual Q.300.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="primaria">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Primaria <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Primero a Sexto Primaria
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Horario: 7:00 a.m. a 12:40 p.m. <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Inscripcion: 0.500.00 <br>
+                  Cuota Mensual: Q.325.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-basicos" role="tabpanel" aria-labelledby="basicos">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Básicos <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Primero a Tercero Básico
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Horario: 7:00 a.m. a 12:50p.m. <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual: Q.350.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-diversificado" role="tabpanel" aria-labelledby="diversificado">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">Diversificado</li>
+                <li class="list-group-item list-group-item-primary">
+                  <u>Perito Contador con Diplomado en Computación <br> Y Administración de Empresas <br> (3 años)</u> <br>
+                  Horario: 7:00 am a 12:50 pm <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual: Q.375.00
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  <u>Secretariado Y Oficinista Con Diplomado en Computación</u> <br>
+                  (2 años) <br>
+                  Horario: 7:00 am a 12:50 p.m. <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual: Q.375.00
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  <u>Bachillerato en Ciencias Y Letras <br> con Diplomado en Computación y Contabilidad</u> <br>
+                  (2 años) <br>
+                  Horario: 7:00 a.m. a 12:50 p.m. <br>
+                  Inscripción: Q.500 00 <br>
+                  Cuota Mensual: Q.375.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-finSemana" role="tabpanel" aria-labelledby="finSemana">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/loasdfasdf.jpg" alt="fin_de_semana">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h2><u>Fin de Semana</u></h2>
+              <p>(Sábado / Domingo / Martes)</p>
+              <p>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <u>Primaria Acelerada</u> <br>
+                    Inscripción Q.250.00 <br>
+                    Cuota mensual Q.185.00
+                  </li>
+                  <li class="list-group-item list-group-item-primary">
+                    <u>Básico Regular</u> (no importa la edad) <br>
+                    Inscripción Q.250.00 <br>
+                    Cuota mensual:<br>
+                    Primero básico Q.235.00 <br>
+                    Segundo y tercero básico Q.185.00
+                  </li>
+                  <li class="list-group-item list-group-item-secondary">
+                    <u>Básico por Madurez</u> <br>
+                    Dos años completos/ 4 semestre / mayor de 18 años <br>
+                    Inscripción Q.250.00 <br>
+                    Cuota Mensual <br>
+                    Primero y segundo semestre Q.235.00 <br>
+                    Tercero y cuarto semestre Q.185.00 <br>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <u>Diversificado</u> <br>
+                    <strong>Perito Contador con Diplomado en Computación</strong> <br> (Tres años completos) <br>
+                    <strong>El Secretario y Oficinista con Diplomado en Computación</strong> <br> (dos años completos) <br>
+                    <u>Inscripción</u> Q.250.00 <br>
+                    <u>Cuota Mensual</u>: <br>
+                    Cuarto secretariado y Perito: Q.250.00 <br>
+                    Quinto perito: Q.250.00 <br>
+                    Quinto secretariado y sexto perito: Q.225.00 <br>
+                    <strong>Bachillerato en ciencias y letras por madurez con diplomado en computación.</strong> (1 año) <br>
+                    Inscripción: Q.250.00 <br>
+                    Cuota mensual: Q.225.00 <br>
+                  </li>
+                  <li class="list-group-item list-group-item-warning">
+                    <u>Papelería de inscripción</u> <br>
+                    Las inscripciones se inician en el mes de noviembre y continuar en enero. <br>
+                    <strong>Al momento de inscripción llenará un formulario de inscripción y ficha de control individual.</strong> <br>
+                    Cada alumno debe entregar en un folder tamaño oficio color rojo para plan diario y azul oscuro para los fin de semana, la papelería requerida, en el siguiente orden, de acuerdo al grado al que ingrese. <br>
+                    * certificación de nacimiento original y reciente de RENAP y dos fotocopias. <br>
+                    * dos fotografías recientes. <br>
+                    * constancia parvularia firmada por el Ministerio de educación (no indispensable) <br>
+                    * Certificado original de 1ro. Primaria <br>
+                    * Certificado original de 2do. Primaria <br>
+                    * Certificado original de 3ro. Primaria <br>
+                    * Certificado original de 4to. Primaria <br>
+                    * Certificado original de 5to. Primaria <br>
+                    * Certificado original de 6to. Primaria <br>
+                    * Diploma de sexto primaria <br>
+                    * Certificado original de 1ro. Básico con matrícula O código personal. <br>
+                    * Certificado original de 2do. Básico con matrícula o código personal. <br>
+                    * Certificado original de 3ro. Básico con matrícula O código personal. <br>
+                    * Diploma de Tercero Básico firmado por Supervisor educativo en original <br>
+                    * Certificado de 4to. diversificado con matricula ocde go personal <br>
+                    * Certificado de 5to diversificado con matricula o Codigo personal <br>
+                    * Carta de buena conducta. <br>
+                  </li>
+                  <li class="list-group-item list-group-item-info">Los alumnos de plan Fin de Semana no utilizan libros de texto, unicamente plataformas digitales, lo que reduce el costo inicial de material</li>
+                </ul>
+                <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="el_saber_2" class="tabcontent scroll">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pre-primaria2" data-toggle="pill" href="#pills-pre-primaria2" role="tab" aria-controls="pills-pre-primaria2" aria-selected="true">Pre-Primaria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="primaria2" data-toggle="pill" href="#pills-primaria2" role="tab" aria-controls="pills-primaria2" aria-selected="false">Primaria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="basicos2" data-toggle="pill" href="#pills-basicos2" role="tab" aria-controls="pills-basicos2" aria-selected="false">Básicos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="diversificado2" data-toggle="pill" href="#pills-diversificado2" role="tab" aria-controls="pills-diversificado2" aria-selected="false">Diversificado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="finSemana2" data-toggle="pill" href="#pills-finSemana2" role="tab" aria-controls="pills-finSemana2" aria-selected="false">Fin de Semana</a>
+        </li>
+      </ul>
+
+      <div class="tab-content scroll" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-pre-primaria2" role="tabpanel" aria-labelledby="pre-primaria2">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Pre-Primaria <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Kinder: 3 y 4 años
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Párvulos: 5 años <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Preparatoria: 6 años <br>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                  Horario: 7:00 am a 12:30 p.m <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual Q.325.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="pills-primaria2" role="tabpanel" aria-labelledby="primaria2">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Primaria <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Primero a Sexto Primaria
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Horario: 7:00 a.m. a 12:40 p.m. <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Inscripcion: 0.500.00 <br>
+                  Cuota Mensual: Q.350.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-basicos2" role="tabpanel" aria-labelledby="basicos2">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">
+                  Básicos <br>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  Primero a Tercero Básico
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  Horario: 7:00 a.m. a 12:50 p.m. <br>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  Inscripción: Q.500.00 <br>
+                  Cuota Mensual: Q.375.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-diversificado2" role="tabpanel" aria-labelledby="diversificado2">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/pre-primaria.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">Diversificado</li>
+                <li class="list-group-item list-group-item-info">
+                  <u>Magisterio Infantil Bilingue Intercultural</u> <br>
+                  (Con énfasis en Idioma Inglés) <br>
+                  Horario: 7:00 am a 1:30 p.m. <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota mensual: Q.450.00
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                  <u>Bachillerato en Ciencias y Letras con Orientacion en: <br>
+                    - Diseño Gráfico <br>
+                    - Electricidad</u> <br>
+                  Horario: 7:00 a.m. a 12:50 p.m. <br>
+                  Inscripción: Q.500.00 <br>
+                  Cuota mensual: Q.400.00
+                </li>
+              </ul>
+              <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-finSemana2" role="tabpanel" aria-labelledby="finSemana2">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="img/loasdfasdf.jpg" alt="fin_de_semana">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h2><u>Fin de Semana</u></h2>
+              <p>(Sábado / Domingo / Tutorías Martes)</p>
+              <p>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <u>Primaria Acelerada</u> <br>
+                    Inscripción: Q.250.00 <br>
+                    Cuota mensual: Q.185.00
+                  </li>
+                  <li class="list-group-item list-group-item-primary">
+                    <u>Básico Regular</u> (no importa la edad) <br>
+                    Inscripción Q.250.00 <br>
+                    Cuota mensual:<br>
+                    Primero básico Q.235.00 <br>
+                    Segundo y tercero básico Q.185.00
+                  </li>
+                  <li class="list-group-item list-group-item-secondary">
+                    <u>Básico por Madurez</u> <br>
+                    2 años completos/ 4 semestre / (mayor de 18 años) <br>
+                    Inscripción: Q.250.00 <br>
+                    Cuota Mensual: <br>
+                    Primero y segundo semestre: Q.235.00 <br>
+                    Tercero y cuarto semestre: Q.185.00 <br>
+                  </li>
+                  <li class="list-group-item list-group-item-success">
+                    <u>Diversificado</u> <br>
+                    <strong>Perito Contador con Diplomado en Computación</strong> <br> (3 años completos) <br>
+                    <strong>El Secretario y Oficinista con Diplomado en Computación</strong> <br> (2 años completos) <br>
+                    <u>Inscripción</u> Q.250.00 <br>
+                    <u>Cuota Mensual</u>: <br>
+                    Cuarto secretariado y Perito: Q.250.00 <br>
+                    Quinto perito: Q.250.00 <br>
+                    Quinto secretariado y sexto perito: Q.225.00 <br>
+                    <strong>Bachillerato en Ciencias y Letras por Madurez con Diplomado en Computación.</strong> (1 año) <br>
+                    Inscripción: Q.250.00 <br>
+                    Cuota mensual: Q.225.00 <br>
+                  </li>
+                  <li class="list-group-item list-group-item-warning">
+                    <u>Papelería de inscripción</u> <br>
+                    Las inscripciones se inician en el mes de noviembre y continuar en enero. <br>
+                    <strong>Al momento de inscripción llenará un formulario de inscripción y ficha de control individual.</strong> <br>
+                    Cada alumno debe entregar en un folder tamaño oficio color rojo para plan diario y azul oscuro para los fin de semana, la papelería requerida, en el siguiente orden, de acuerdo al grado al que ingrese. <br>
+                    * Certificación de nacimiento original y reciente de RENAP y 2 fotocopias. <br>
+                    * 2 fotografías recientes. <br>
+                    * constancia parvularia firmada por el Ministerio de educación (no indispensable) <br>
+                    * Certificado original de 1ro. Primaria <br>
+                    * Certificado original de 2do. Primaria <br>
+                    * Certificado original de 3ro. Primaria <br>
+                    * Certificado original de 4to. Primaria <br>
+                    * Certificado original de 5to. Primaria <br>
+                    * Certificado original de 6to. Primaria <br>
+                    * Diploma de sexto primaria <br>
+                    * Certificado original de 1ro. Básico con matrícula o código personal. <br>
+                    * Certificado original de 2do. Básico con matrícula o código personal. <br>
+                    * Certificado original de 3ro. Básico con matrícula o código personal. <br>
+                    * -Diploma de Tercero Básico firmado por Supervisor educativo en original <br>
+                    * Certificado de 4to. diversificado con matricula o código personal <br>
+                    * Certificado de 5to. diversificado con matricula o código personal <br>
+                    * Carta de buena conducta. <br>
+                  </li>
+                  <li class="list-group-item list-group-item-info">Los alumnos de plan Fin de Semana no utilizan libros de texto, unicamente plataformas digitales, lo que reduce el costo inicial de material</li>
+                </ul>
+                <p>Fecha de Inscripción Plan Fin de Semana: Noviembre y Enero</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <h3 class="text-center">Los pagos se realizan en fechas del 1 al 10 de cada mes en Banco del sistema indicado por el establecimiento del 11 de cada mes en adelante se generan cargos por mora. (Aplica a diario y fin de semana).</h3>
+  </div>
+  <br>
+  <footer id="footer" class="pb-4 pt-4">
+    <h3 class="text-center">¡Contáctanos!</h3>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg text-center pb-1">
+        <div class="container">
+          <h3>Centro Educativo Integral <br> El Saber 1</h3>
+          <p><u>Dirección</u>: 2ª. Calle 1-40, Zona 2, San José Pinula</p> <br>
+          <a href="tel:+50266343164">Tel. 6634-3164</a> <small>← Click para llamar</small>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-5 col-lg text-center pb-1">
+        <div class="container">
+          <h3 class="text-center">¡Síguenos!</h3>
+          <a href="https://www.facebook.com/ColegioElSaber.SJP" target="_blank"><img class="icon redondear" src="img/facebook-icon.png" alt="Facebook_El_saber"></a>
+          <a href="https://www.youtube.com/channel/UC2FBSP7RlcrPEpAsPuiRDEQ" target="_blank"><img class="icon redondear" src="img/youtube-icon.png" alt="youtube_channel_El_Saber"></a>
+          <a href="mailto:centroeducativointegralelsaber@gmail.com"><img class="icon redondear" src="img/gmail-icon.png" alt="gmail_to_El_Saber"></a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg text-center pb-1">
+        <div class="container">
+          <h3>Centro Educativo Integral <br> El Saber 2</h3>
+          <p><u>Dirección</u>: Lote 3, Manzana D, Sector “Los Claveles”,<br>Residenciales San José, San José Pinula</p>
+          <a href="tel:+50266407305">Tel. 6640-7305</a> <br> <a href="tel:+50250620000">Tel. 5062-0000</a> <small>← Click para llamar</small> <br> <a href="tel:+50266343164">Tel. 6634-3164</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <p class="text-center" style="font-size: 0.8em;">Powered By &copy;RC SoftGroup</p>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/index.js" type="text/javascript"></script>
+</body>
+
+</html>

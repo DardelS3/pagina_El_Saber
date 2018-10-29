@@ -37,7 +37,7 @@ h1 {
   font-size: 40px;
   line-height: 1.5;
   letter-spacing: -.2px;
-  color: white;
+  color: black;
   margin: 0;
   /* margin: 100px 150px 70px 30px; */
   /* text-transform: uppercase; */
@@ -72,35 +72,39 @@ h2 {
   object-fit: cover;
 }
 
-#carousel{
-	position: relative;
+#carousel {
+  position: relative;
 }
 
-.#carousel .overlay{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-
-	background-color: rgba(0, 0, 0, 0.5);
-	color: #FFF;
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
 }
 
-#main .carousel-inner img{
-	object-fit: cover;
-	max-height: 70vh;
-	filter: grayscale(70%);
+#main .carousel-inner img {
+  object-fit: cover;
+  max-height: 70vh;
+  filter: grayscale(70%);
 }
 
-#header img{
-	width: 60px;
+#header img {
+  width: 60px;
+}
+
+.portada {
+  width: 450px;
+  align-items: center;
 }
 
 .scroll {
-     width:628px;
-     height:315px;
-     overflow:auto;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
 }
 
 .header {
@@ -170,7 +174,6 @@ figure {
   padding: 0 10px;
 }
 
-
 .logoMenu {
   display: none;
 }
@@ -214,7 +217,7 @@ div .redes {
 }
 
 #footer {
-  background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
   color: white;
 }
 
@@ -235,7 +238,6 @@ div .redes {
   margin-left: 20px;
 }
 
-
 .container {
   /* border: 1px solid red; */
   max-width: 1000px;
@@ -254,8 +256,6 @@ section .container {
 }
 
 /* desktop first que empieces desde el MQ más grande */
-
-
 @media screen and (max-width: 1023px) {
   .event-list-title {
     margin-left: 0;
@@ -293,6 +293,10 @@ section .container {
   h1 {
     font-size: 2em;
     z-index: 2;
+  }
+  .portada {
+    width: 200px;
+    align-items: center;
   }
 }
 
@@ -425,6 +429,10 @@ section .container {
   .event img {
     width: 100%;
   }
+  .portada {
+    width: 200px;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -445,6 +453,7 @@ section .container {
     margin: -2em .5em .5em;
     padding: 1em;
   }
+
   .titulo {
     font-size: 0.7em;
   }
@@ -479,7 +488,12 @@ section .container {
     height: 40px;
     background-size: 100%;
   }
-
+  .portada {
+    width: 200px;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -495,5 +509,4 @@ section .container {
   .hero {
     padding: 2em 1em;
   }
-
 }
