@@ -96,6 +96,7 @@ h2 {
   width: 60px;
 }
 
+
 .portada {
   width: 60%;
   align-items: center;
@@ -143,6 +144,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+li {
+  font-size: 1.3em;
 }
 
 figure {
