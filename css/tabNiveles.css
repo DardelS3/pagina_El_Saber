@@ -15,6 +15,7 @@
     padding: 14px 16px;
     transition: 0.3s;
     width: 50%;
+    border: 1px #c3c3c3 solid;
 }
 
 /* Change background color of buttons on hover */
@@ -45,6 +46,8 @@
   background-color: rgb(53, 156, 216);
   font-size: 1.6em;
   width: 20%;
+  border: 1px white solid;
+
 }
 
 #el_saber_1 a {
@@ -55,11 +58,13 @@
   background-color: rgb(53, 156, 216);
   font-size: 1.6em;
   width: 20%;
+  border: 2px white solid;
 }
 
 #el_saber_2 a {
   color: white;
 }
+
 
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
