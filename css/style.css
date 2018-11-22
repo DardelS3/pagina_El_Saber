@@ -16,6 +16,12 @@
   content: "\e900";
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
+
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -89,7 +95,7 @@ h2 {
 #main .carousel-inner img {
   object-fit: cover;
   max-height: 70vh;
-  filter: grayscale(70%);
+  filter: grayscale(30%);
 }
 
 #header img {

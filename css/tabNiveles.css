@@ -14,7 +14,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    width: 50%;
+    width: 100%;
     border: 1px #c3c3c3 solid;
 }
 
@@ -42,28 +42,22 @@
   width: 80%;
 }
 
-#el_saber_1 .nav-item {
+/* #el_saber_1 .nav-item {
   background-color: rgb(53, 156, 216);
   font-size: 1.6em;
   width: 20%;
   border: 1px white solid;
 
-}
+} */
 
 #el_saber_1 a {
-  color: white;
+  color: black;
 }
 
-#el_saber_2 .nav-item {
-  background-color: rgb(53, 156, 216);
-  font-size: 1.6em;
-  width: 20%;
-  border: 2px white solid;
-}
-
-#el_saber_2 a {
-  color: white;
-}
+  #el_saber_2 .nav-item {
+    font-size: 1.6em;
+    width: 25%;
+  }
 
 
 @-webkit-keyframes fadeEffect {
