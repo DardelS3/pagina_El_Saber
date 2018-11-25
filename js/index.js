@@ -1,6 +1,6 @@
 $('.carousel').carousel({
   interval: 5000
-})
+});
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 })
@@ -12,9 +12,9 @@ function abrirPanel(evt, cityName) {
   }
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace("active", "");
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
 document.getElementById("defaultOpen").click();
