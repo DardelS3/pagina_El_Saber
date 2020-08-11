@@ -14,7 +14,37 @@
     <link href="css/nav.css" rel="stylesheet">
     <link href="css/tabNiveles.css" rel="stylesheet">
 
-    <title>El Saber 1 | Centro Educativo Integral El Saber</title>
+    <title>Centro Educativo Integral El Saber</title>
+
+    <style>
+        .collapse {
+            visibility: hidden;
+        }
+
+        .collapse.show {
+            visibility: visible;
+            display: block;
+        }
+
+        .collapsing {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition-property: height, visibility;
+            transition-property: height, visibility;
+            -webkit-transition-duration: 0.35s;
+            transition-duration: 0.35s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+
+        .collapsing.width {
+            -webkit-transition-property: width, visibility;
+            transition-property: width, visibility;
+            width: 0;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="59">
@@ -73,14 +103,36 @@
         </div>
     </nav>
 
-    <h2 class="text-center">Revista Graduandos 2020</h2>
+    <h2 class="text-center">Revista Graduandos</h2>
 
-    <div class="">
-          <iframe class="responsive-iframe" style="min-width: 100%; min-height: 700px;"
-              src="https://www.flipbookpdf.net/web/site/b68f0cfb9fb0bfbe8d1855ad0ba5f8e8b53abe49202007.pdf.html"></iframe>
+    <div class="" style="padding: 0 1em;">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <button role="button" class="btn btn-danger action btn-block"
+                valor="https://www.flipbookpdf.net/web/site/8ea3d013aa79cfc517aa1e6d6d71a19f12062e24202008.pdf.html"
+                data-toggle="collapse" data-target="#demo">
+                11 de Marzo de 2020
+            </button>
+            <button role="button" class="btn btn-danger action btn-block"
+                valor="https://www.flipbookpdf.net/web/site/b68f0cfb9fb0bfbe8d1855ad0ba5f8e8b53abe49202007.pdf.html"
+                data-toggle="collapse" data-target="#demo">
+                4 de Agosto 2019
+            </button>
+                <br>
+                <br>
+                <p class="text-center" style="font-size: 0.8em; position: relative; bottom: 15px;">Powered By RCE
+                    SoftGroup &copy;
+                    2020</p>
+
+            </div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <div id="demo" class="collapse show width ">
+                    <iframe id="iframe" class="responsive-iframe" style="min-width: 100%; min-height: 700px;"
+                        src="https://www.flipbookpdf.net/web/site/b68f0cfb9fb0bfbe8d1855ad0ba5f8e8b53abe49202007.pdf.html"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-
-  <p class="text-center" style="font-size: 0.8em;">Powered By RCE SoftGroup &copy; 2020</p>
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -93,6 +145,21 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="js/index.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.action').click(function () {
+                let valor = $(this).attr('valor')
+
+                $('#iframe').attr("src", valor)
+                $('#demo').on('hidden.bs.collapse', function () {
+                    $(this).collapse('show')
+                })
+
+                console.log(valor);
+            })
+        })
+    </script>
 </body>
 
 </html>
